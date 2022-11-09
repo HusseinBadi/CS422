@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+body {
+    background: linear-gradient(to bottom, #009999 54%, #ffcccc 103%);
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow: hidden;
+    font-family: 'Inter';
+}
+
+#topDiv {
+    height: 25%;
+}
+#bottomDiv {
+    height: 40%;
+    text-align:center
+}
+
+#input{
+    height: 30px;
+    width: 350px;
+    font-size: larger;
+    font-family: 'Inter';
+}
+
+#submit {
+    height: 35px;
+    width: 100px;
+    font-size: larger;
+    font-family: 'Inter';
+    margin-left:20px;
+}
+
+
