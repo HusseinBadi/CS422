@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+body {
+    background: linear-gradient(to bottom, #009999 54%, #ffcccc 120%);
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow: hidden;
+    font-family: 'Inter';
+}
+
+#topDiv {
+    height: 5%;
+}
+#middleDiv {
+    height: 70%;
+    text-align:center
+}
+
+#bottomDiv {
+    height: 5%;
+}
+
+table {
+    padding: 0px 0px 0px 570px;
+    height: 320px; 
+    width: auto;
+    border-spacing: 30px;
+}
+
+#row-1, #row-2, #td1 {
+    height: 100px;
+    width: 100px;
+    border: 2px solid;
+    border-color: black;
+    text-align: center;
+    padding: 40px;
+  }
+
+  #row-2, #row-4{
+    height: 50px;
+    width: 50px;
+  }
+
+
+
