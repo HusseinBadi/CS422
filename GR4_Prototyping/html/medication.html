@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/medicationStyle.css" />
+    </head>
+
+    <body>
+        <div id = "topDiv"> Request Medication </div>
+        <fieldset>
+            <legend> Request medication </legend>
+            <div>
+                <input type="checkbox" id="pain" name="medication" value="pain" />
+                <label for="pain">Pain Reliever</label>
+            </div>
+            <div>
+                <input type="checkbox" id="nausea" name="medication" value="nausea" />
+                <label for="nausea">Nausea Medication</label>
+            </div>
+            <div>
+                <label for="other">
+                    Other:
+                    <input type="text" id="other" name="other"><br><br>
+                </label>
+            </div>
+            <div>
+                <form action="../html/menu.html">
+                    <input type="submit" name="submit" value="Submit" >
+                    <input type="submit" name="submit" value="Cancel" formnovalidate >
+                </form>
+                
+            </div>
+        </fieldset>
+
+        
+    </body>
+</html>
