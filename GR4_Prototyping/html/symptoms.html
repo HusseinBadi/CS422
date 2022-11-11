@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <!--
+/* Copyright (c) 2017 MIT 6.813/6.831 course staff, all rights reserved.
+ * Redistribution of original or derived work requires permission of course staff.
+ */
+-->
+
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Load style sheets -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css"
+    />
+
+    <link rel="stylesheet" href="helpLayout.css" />
+
+    <!-- Use mobile-aware viewport -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Load any supplemental Javascript libraries here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.2/seedrandom.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" id="pain" value="Pain Releiver" />
+    <label for="vehicle1"> Pain</label><br />
+    <input type="checkbox" id="naus" alue="Nauseau" />
+    <label for="vehicle2"> Nauseau</label><br />
+    <input type="checkbox" id="other" value="Other" onclick="getText()" />
+    <label for="vehicle3">
+      <label name="form">Other:</label>
+      <input type="text" id="otherText" size="10" disabled />
+    </label>
+
+    <br /><br />
+    <input type="submit" value="Submit" onclick="sendAlert()" />
+
+    <script>
+      function getText() {
+        var checkBox = document.getElementById("other");
+        var text = document.getElementById("otherText");
+        if (checkBox.checked == true) {
+          text.disabled = false;
+        } else {
+          text.disabled = true;
+        }
+      }
+
+      function sendAlert() {
+        var checkbox1 = document.getElementById("pain");
+        var checkbox2 = document.getElementById("naus");
+        var checkbox3 = document.getElementById("other");
+
+        var text = document.getElementById("otherText");
+
+        var med1 = "pain releiver";
+        var med2 = "Nauseau Relief";
+
+        if (checkbox3.checked == true) {
+          var med3 = text.value;
+        }
+
+        var alert = "You have ordered the following medications: \n";
+
+        if (checkbox1.checked == true) {
+          console.log("1");
+          alert = alert.concat(med1);
+          console.log(alert);
+          console.log(med1);
+          alert = alert.concat(" ");
+          alert = alert.concat("\n");
+        }
+
+        if (checkbox2.checked == true) {
+          console.log("2");
+          alert = alert.concat(med2);
+          alert = alert.concat(" ");
+          alert = alert.concat("\n");
+        }
+
+        if (checkbox3.checked == true) {
+          alert = alert.concat(med3);
+          alert = alert.concat(" ");
+          alert = alert.concat("\n");
+        }
+
+        window.alert(alert);
+      }
+    </script>
+  </body>
+</html>

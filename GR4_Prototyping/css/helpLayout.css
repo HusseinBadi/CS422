@@ -6,21 +6,7 @@ body {
     background: linear-gradient(to bottom, #009999 54%, #ffcccc 120%);
     background-repeat: no-repeat;
     background-size: auto;
-    overflow: hidden;
     font-family: 'Inter';
-}
-
-#topDiv {
-    height: 20%;
-}
-#middleDiv {
-    height: 56%;
-    text-align:center
-}
-
-#bottomDiv {
-    height: 30%;
-    text-align: center;
 }
 
 table {
@@ -62,6 +48,3 @@ table {
     width: 500px;
     margin: 0 auto;
   }
-
-
-
