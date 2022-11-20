@@ -5,25 +5,36 @@
       href="https://fonts.googleapis.com/css?family=Inter"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css\mainStyle.css" />
+    <link rel="stylesheet" href="../css/requestCodeStyle.css" />
   </head>
   <script>
     function feedBack() {
-      alert("Request has been sent!");
+      alert(
+        "Code request has been sent, a nurse will arive shortly with a new one!"
+      );
+      document.getElementById("newCode").setAttribute.disabled = false;
     }
   </script>
   <body>
     <div id="topDiv"></div>
     <div id="bottomDiv">
       <h1>Request New Code</h1>
-      <form name="myForm" action="/action_page.php" method="get">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" /><br /><br />
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname" /><br /><br />
-        <label for="lname">Seat number:</label>
-        <input type="text" id="lname" name="lname" /><br /><br />
-        <input type="button" onclick="feedBack()" value="Send request!" />
+      <form>
+        <label>First name:</label>
+        <input id="text1" /><br /><br />
+        <label>Last name:</label>
+        <input id="text2" /><br /><br />
+        <label>Seat number:</label>
+        <input id="text3" /><br /><br />
+        <input
+          id="submit"
+          type="button"
+          onclick="feedBack()"
+          value="Send request!"
+        />
+        <a href="../main.html">
+          <input id="newCode" type="button" value="Enter new code" />
+        </a>
       </form>
     </div>
   </body>
