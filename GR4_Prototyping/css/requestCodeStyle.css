@@ -18,19 +18,28 @@ body {
     text-align:center
 }
 
-#input{
-    height: 30px;
-    width: 350px;
-    font-size: larger;
-    font-family: 'Inter';
-}
 
-#submit {
+
+input {
     height: 35px;
-    width: 100px;
+    width: 200px;
     font-size: larger;
     font-family: 'Inter';
     margin-left:20px;
 }
 
+a { 
+    color: blue;
+}
 
+#text1 {
+    padding: 0px 40px 0px 0px;
+}
+
+#text2 {
+    padding: 0px 40px 0px 0px;
+}
+
+#text3 {
+    padding: 0px 40px 0px 8px;
+}
