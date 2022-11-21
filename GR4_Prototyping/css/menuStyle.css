@@ -19,6 +19,7 @@ body {
 }
 
 #bottomDiv {
+    padding: 40px 0px 0px 0px;
     height: 30%;
     text-align: center;
 }
@@ -54,13 +55,11 @@ table {
 
   label {
     font-size: xx-large;
-    margin: 0 auto;
   }
 
   progress {
     height: 25px;
     width: 500px;
-    margin: 0 auto;
   }
 
 
