@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    display: table;
+    margin: auto;
+    height: 100%;
+}
+body{
+    background-color: DodgerBlue;
+    background-size: auto;
+    background-repeat: no-repeat;
+    font-family: 'Inter';
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
