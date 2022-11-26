@@ -15,7 +15,7 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css"
     />
 
-    <link rel="stylesheet" href="helpLayout.css" />
+    <link rel="stylesheet" href="../css/symptomStyle.css" />
 
     <!-- Use mobile-aware viewport -->
     <meta
@@ -28,24 +28,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.2/seedrandom.js"></script>
   </head>
   <body>
-    <input type="checkbox" id="pain" value="Pain Releiver" />
-    <label for="vehicle1"> Pain</label><br />
-    <input type="checkbox" id="naus" alue="Nauseau" />
-    <label for="vehicle2"> Nauseau</label><br />
-    <input type="checkbox" id="other" value="Other" onclick="getText()" />
-    <label for="vehicle3">
-      <label name="form">Other:</label>
-      <input type="text" id="otherText" size="10" disabled />
-    </label>
-
-    <br /><br />
-    <input type="submit" value="Submit" onclick="sendAlert()" />
+    <div style="width: 50%; height: 50%; float:left;">
+      <h2>Add Symptoms</h2>
+      <input type="checkbox" id="pain" value="Pain Releiver" />
+      <label for="vehicle1"> Pain</label><br />
+      <input type="checkbox" id="naus" alue="Nauseau" />
+      <label for="vehicle2"> Nauseau</label><br />
+      <input type="checkbox" id="other" value="Other" onclick="getText()" />
+      <label for="vehicle3">
+        <label name="form">Other:</label>
+        <input type="text" id="otherText" size="10" disabled />
+      </label>
+  
+      <br /><br />
+     <input type="submit" value="Submit" onclick="sendAlert()" />
+    </div>
+  
 
     <script>
       function getText() {
         var checkBox = document.getElementById("other");
         var text = document.getElementById("otherText");
         if (checkBox.checked == true) {
+          console.log("hello");
           text.disabled = false;
         } else {
           text.disabled = true;
@@ -53,45 +58,82 @@
       }
 
       function sendAlert() {
+        addSymptom1();
+        addSymptom2();
+        addSymptom3();
+
+      }
+
+      function addSymptom1(){
         var checkbox1 = document.getElementById("pain");
-        var checkbox2 = document.getElementById("naus");
+        var med1 = "Body pain";
+        var list = document.getElementById('list');
+        var li = document.createElement("li");
+        if (checkbox1.checked == true) {
+          if( !contains(med1)){
+              li.appendChild(document.createTextNode(med1));
+              list.appendChild(li);
+          }
+          
+        }
+      }
+
+      function addSymptom2(){
+        var checkbox1 = document.getElementById("naus");
+        var med1 = "Nauseau";
+        var list = document.getElementById('list');
+        var li = document.createElement("li");
+        if (checkbox1.checked == true) {
+          if( !contains(med1)){
+              li.appendChild(document.createTextNode(med1));
+              list.appendChild(li);
+          }
+          
+        }
+      }// med2
+
+      function addSymptom3(){
         var checkbox3 = document.getElementById("other");
-
         var text = document.getElementById("otherText");
-
-        var med1 = "pain releiver";
-        var med2 = "Nauseau Relief";
 
         if (checkbox3.checked == true) {
           var med3 = text.value;
         }
-
-        var alert = "You have ordered the following medications: \n";
-
-        if (checkbox1.checked == true) {
-          console.log("1");
-          alert = alert.concat(med1);
-          console.log(alert);
-          console.log(med1);
-          alert = alert.concat(" ");
-          alert = alert.concat("\n");
-        }
-
-        if (checkbox2.checked == true) {
-          console.log("2");
-          alert = alert.concat(med2);
-          alert = alert.concat(" ");
-          alert = alert.concat("\n");
-        }
-
+        var list = document.getElementById('list');
+        var li = document.createElement("li");
         if (checkbox3.checked == true) {
-          alert = alert.concat(med3);
-          alert = alert.concat(" ");
-          alert = alert.concat("\n");
+          if(!contains(med3)){
+            li.appendChild(document.createTextNode(med3));
+            list.appendChild(li);
+          }
+          
         }
+      } // med3
 
-        window.alert(alert);
+      function contains(text){
+        let found = false;
+        $("#list li").each((id, elem) => {
+          console.log(elem.innerText);
+                if (elem.innerText == text) {
+                    found = true;
+                }
+            });
+
+        return found;
       }
     </script>
+
+    <div class = "Symptioms List" style="width: 50%; height: 50%; float:right;">
+      <h2>Symptom List</h2>
+      <ul id = "list">
+        
+      </ul>
+    </div>
+    <br>
+    <br>
+
+    <div>
+      <button onclick="window.location.href='../html/menu.html';">Back</button>
+    </div>
   </body>
 </html>
