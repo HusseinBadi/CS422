@@ -9,13 +9,13 @@
         <div class = "row">
 
             <div class ="column">
-                <input type ="checkbox" id="walking_cane" name="mobility" onclick="checkBox(this)"/>
+                <input type ="checkbox" id="walking_cane" name="mobility"/>
                 <label for="walking_cane">
                 <img src="../images/walkingcane.png" />
                 <p>Walking Cane</p>
                 </label>
 
-                <input type ="checkbox" id="wheelchair" name="mobility" onclick="checkBox(this)"/>
+                <input type ="checkbox" id="wheelchair" name="mobility"/>
                 <label for="wheelchair">
                 <img src="../images/wheelchair.png" />
                 <p>Wheelchair</p>
@@ -23,13 +23,13 @@
             </div>
             
             <div class ="column">
-                <input type ="checkbox" id="rolling_walker" name="mobility" onclick="checkBox(this)"/>
+                <input type ="checkbox" id="rolling_walker" name="mobility"/>
                 <label for="rolling_walker">
                 <img src="../images/rollingwalker.jpg" />
                 <p>Rolling Walker</p>
                 </label>
 
-                <input type ="checkbox" id="knee_walker" name="mobility" onclick="checkBox(this)"/>
+                <input type ="checkbox" id="knee_walker" name="mobility"/>
                 <label for="knee_walker">
                 <img src="../images/kneewalker.png" />
                 <p>Knee Walker</p>
@@ -39,7 +39,7 @@
             <div class ="column">
                 <label for="other">
                     Other:
-                    <input type="text" id="other" name="mobility" onclick="checkBox(this)"><br><br>
+                    <input type="text" id="other" name="mobility"><br><br>
                 </label>
             </div>
             
@@ -50,28 +50,6 @@
                 </form>
             </div>
 
-            <!-- <script>
-                function checkBox(checkType){
-                    var checkID = document.getElementById(checkType.id);
-                    var checkName = document.getElementsByName(checkType.name);
-
-                    if(checkID.checkID) {
-                        for(var i =0; i < checkName.length; i ++) {
-                            if(!checkName[i].checkID){
-                                checkName[i].disable=true;
-                            }
-                            else {
-                                checkName[i].disable=false;
-                            }
-                        }
-                    }
-                    else {
-                        for(var i = 0; i < checkName.length; i++) {
-                            checkName[i].disable = false;
-                        }
-                    }
-                }
-            </script> -->
         </div>
         <div id="bottomDive"></div>
 
