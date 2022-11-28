@@ -18,3 +18,10 @@ body{
     height: 100%;
 }
 
+input[type=submit] {
+    height: 35px;
+    width: 100px;
+    font-size: larger;
+    font-family: 'Inter';
+    margin-left:20px;
+}

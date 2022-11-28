@@ -3,19 +3,21 @@
     margin: 0;
     box-sizing: border-box;
 }
-html {
-    display: table;
-    margin: auto;
-    height: 100%;
-}
 body{
-    background-color: DodgerBlue;
+    background-color: aliceblue;
     background-size: auto;
-    background-repeat: no-repeat;
-    font-family: 'Inter';
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
+    overflow: auto;
+}
+
+#topDiv {
+    height: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+#bottomDiv {
+    height: 5%;
 }
 .column {
     
