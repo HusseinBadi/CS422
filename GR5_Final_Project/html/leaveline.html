@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <div align="center">
+    <div id="topDiv"></div>
+    <div id="bottomDiv">
+      <link rel="stylesheet" href="../css/mainStyle.css" />
       <h1>Confirmation</h1>
 
       <p>Are you sure you want to leave the ER?</p>
 
-      <form action="../main.html">
-        <input type="submit" value="Yes" />
-      </form>
-
-      <form action="menu.html">
-        <input type="submit" value="No" />
-      </form>
+      <button name="submit" type="submit" value="Yes" onclick= "parent.location='../main.html'" style="height: 25px; width: 50px; border-color: green;">Yes</button>
+      <button name="submit" type="submit" value="No" onclick= "parent.location='menu.html'" style="height: 25px; width: 50px; border-color: red;">No</button>
     </div>
   </body>
 </html>
