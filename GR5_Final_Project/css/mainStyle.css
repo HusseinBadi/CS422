@@ -3,10 +3,10 @@ html, body {
     height: 100%;
 }
 body {
-    background: linear-gradient(to bottom, #009999 54%, #ffcccc 103%);
-    background-repeat: no-repeat;
+    background: #009999;
+    background-repeat:repeat-y;
     background-size: auto;
-    overflow: hidden;
+    overflow:auto;
     font-family: 'Inter';
 }
 
