@@ -1,50 +1,27 @@
-html, body {
-    margin: 0;
-    height: 100%;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body {
-    background: linear-gradient(to bottom, #009999 54%, #ffcccc 120%);
-    background-repeat: no-repeat;
-    background-size: auto;
-    font-family: 'Inter';
+html {
+  display: table;
+  margin: auto;
+  height: 100%;
+}
+body{
+  background-color: DodgerBlue;
+  background-size: auto;
+  background-repeat: no-repeat;
+  font-family: 'Inter';
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
 }
 
-table {
-    height: 320px; 
-    width: auto;
-    font-size: xx-large;
-    margin: 0 auto;
+input[type=submit] {
+  height: 35px;
+  width: 100px;
+  font-size: larger;
+  font-family: 'Inter';
+  margin-left:20px;
 }
-
-#row-1, #row-2, #td1 {
-    height: 100px;
-    width: 100px;
-    border-color: black;
-    text-align: center;
-    padding: 15px;
-  }
-
-  #row-2, #row-4{
-    height: 50px;
-    width: 50px;
-  }
-
-  a:hover{
-    background-color: blue;
-  }
-
-  img {
-    height: 120px;
-    width: 180px;
-  }
-
-  label {
-    font-size: xx-large;
-    margin: 0 auto;
-  }
-
-  progress {
-    height: 25px;
-    width: 500px;
-    margin: 0 auto;
-  }
