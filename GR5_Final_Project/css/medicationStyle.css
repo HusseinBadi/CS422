@@ -4,22 +4,32 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aliceblue;
+    background-color: #009999;;
     background-size: auto;
     overflow: auto;
 }
-
 #topDiv {
     height: 5%;
     text-align: center;
     font-weight: bold;
     font-size: 300%;
+    
+    position: absolute;
+    top: 25%;
+    left: 43%;
+    margin: -50px 0 0 -50px;
+  
 }
 fieldset{
     border: 1px solid rgb(3, 1, 1);
     width: 400px;
     margin:auto;
     padding: 10px;
+
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    margin: -50px 0 0 -50px;
 }
 legend{
     font-size: 150%;
@@ -27,7 +37,6 @@ legend{
 label{
     font-size: 150%;
 }
-
 input[type=submit] {
     height: 35px;
     width: 100px;
