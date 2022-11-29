@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/requestCodeStyle.css" />
+  </head>
+  <script>
+    function feedBack() {
+      alert(
+        "Code request has been sent, a nurse will arive shortly with a new one!"
+      );
+      document.getElementById("newCode").setAttribute.disabled = false;
+    }
+  </script>
+  <body>
+    <div id="topDiv"></div>
+    <div id="bottomDiv">
+      <h1>Request New Code</h1>
+      <div class="column">
+        <form action="../main.html">
+          <label>First name:</label>
+          <input id="text1" /><br /><br />
+          <label>Last name:</label>
+          <input id="text2" /><br /><br />
+          <label>Seat number:</label>
+          <input id="text3" /><br /><br />
+          <input
+            type="submit"
+            id="submit"
+            value="Submit"
+            onclick="alert('Code request has been sent, a nurse will arive shortly with a new one!')"
+          />
+        </form>
+        <form action="../main.html">
+          <div>
+            <input id="submit" type="submit" value="Back" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

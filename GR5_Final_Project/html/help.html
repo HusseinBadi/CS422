@@ -14,7 +14,7 @@
 <link rel="stylesheet" href=
   "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
 
-  <link rel="stylesheet" href="../css/mobilityStyle.css" />
+  <link rel="stylesheet" href="../css/helpLayout.css" />
 
 <!-- Use mobile-aware viewport -->
 <meta name="viewport" content=
@@ -31,13 +31,16 @@
 </head>
 <body>
   <div class="callClass">
-    <img src = "../images/nurse.webp" id="call" onclick="window.alert('Nurse has been notified. Will be with you shortly')" width="500" height="600">Call</img>
+    <img  src = "../images/nurse.webp" id="call" onclick="window.alert('Nurse has been notified. Will be with you shortly')" width="200" height="200" </img>
+    <p  style="font-size:40px;text-align:center">Call</p>
   </div>
   <div class="infoClass">
-      <img src="../images/info.png" id="info" width="500" height="600">Info</img>
+      <img src="../images/info.png" id="info" onclick="window.alert('If you click the call icon, it will call a nurse. And the main page has various options in which you can request different available items in the ER. As well as changing the current language and leave the line.')"width="200" height="200"></img>
+      <p  style="font-size:40px;text-align:center">Info</p>
   </div>
+
   <div>
-      <button id="back" onclick="window.location.href='html/menu.html';">Back</button>
+    <input type="submit" name="submit" value= "Back" onclick="window.location.href='../html/menu.html';" formnovalidate>
   </div>
 
 

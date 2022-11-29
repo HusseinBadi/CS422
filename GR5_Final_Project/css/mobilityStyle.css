@@ -4,21 +4,22 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aliceblue;
+    background-color: #009999;
     background-size: auto;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #topDiv {
     height: 5%;
     text-align: center;
     font-weight: bold;
-    font-size: 300%;
+    font-size: 300%; 
 }
 
 #bottomDiv {
     height: 5%;
 }
+
 .column {
     
     text-align: center;
@@ -29,13 +30,12 @@ body{
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 100%;
   }
 
 .column img {
-    width: 200px;
-    height: 200px;
- 
+    width: 100px;
+    height: 100px;
 }
 input[type=checkbox] {
     vertical-align: top;
