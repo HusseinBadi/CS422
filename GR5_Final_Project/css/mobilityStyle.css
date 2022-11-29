@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aliceblue;
+    background-color: #009999;
     background-size: auto;
     overflow: auto;
 }
@@ -13,12 +13,13 @@ body{
     height: 5%;
     text-align: center;
     font-weight: bold;
-    font-size: 300%;
+    font-size: 300%; 
 }
 
 #bottomDiv {
     height: 5%;
 }
+
 .column {
     
     text-align: center;
@@ -35,7 +36,6 @@ body{
 .column img {
     width: 100px;
     height: 100px;
- 
 }
 input[type=checkbox] {
     vertical-align: top;
